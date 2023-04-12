@@ -1,0 +1,354 @@
+/* Importing the font from google fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600&display=swap');
+
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(218, 34%, 13%);
+    /* background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(/img/code.jpg); 
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    font-family: helvetica;
+    color: white;
+    font-family: 'poppins';
+    min-height: 100vh;
+}
+/* navbar styling */
+.sticky-navbar {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(0, 0, 0, 0.548);
+}
+
+/* Styling the page name. */
+.page-name {
+    font-family: 'poppins';
+    font-weight: 600;
+    font-size: 40px;
+    font-size: 5vh;
+    margin: 2px 0 0 55px;
+}
+
+.nav-bar-button{
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+
+/* this styling applies to get involved too */
+.get-started-button,
+#vote {
+    font-family: 'poppins';
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    padding: 13px 23px;
+    /* padding: 1.5vh 2vw; */
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: auto;
+}
+
+.get-started-button:active {
+    background-color: black;
+    border-color: white;
+    transform: scale(.95);
+}
+
+.get-started-button:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+.started {
+    margin-top: 10px;
+    margin-right: 30px;
+    padding: 1.5vh 2vw;
+}
+/*  this sttling applies to get-involved */
+.involved {
+    width: 150px;
+}
+
+/* this styling is for the progress bar */
+
+.progress-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+#p-left,
+#p-right,
+.election-counter {
+    font-size: 40px;
+    /* display: inline-block; */
+}
+
+.percent-bar-style {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+}
+
+.lightblue {
+    width: 50%;
+    height: 10px;
+    background-color: #ff4c55;
+    text-align: center;
+}
+
+.lightpink {
+    width: 50%;
+    height: 10px;
+    background-color: rgb(37, 150, 190);
+    text-align: center;
+}
+
+/* progress bar styling ends here */
+
+
+/* This styling is for the small box before the voting page */
+.small-box {
+    width: 100%;
+    height: 100px;
+    /* background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(/img/code.jpg); 
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: rgba(128, 214, 253, 0.007);
+    color: #ff4c55;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+/* styling for the body(page-01) starts here */
+.main-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 585px;
+    background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),url(/img/background2.jpg); 
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+}
+
+.rounded-images {
+    display: grid;
+    position: relative;
+    margin-top: 70px;
+    margin-left: 10%;
+    margin-right: auto;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    /* justify-items: center; */
+}
+
+.round-images{
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    box-sizing: border-box;
+    /* display: block; */
+}
+
+
+.left-side-text {
+    font-family: 'Poppins';
+    text-align: center;
+}
+.Election-Of-The-Head-Of-Our-State{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.participate-text{
+    font-size: 30px;
+    font-weight: 200;
+}
+.blah-blah-blah{
+    font-size: 17px;
+    font-weight: 300;
+    margin-top: 10px;
+    word-wrap: normal;
+}
+
+/* styling for the body(page-02) starts here */
+
+.second-container{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+    height: 685px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url(/img/pexels-hasan-albari-1229861.jpg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Right styling starts here */
+.right-vote-side {
+    flex: 1;
+}
+
+.left-map-side {
+    flex: 1;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.right-map {
+    flex: 1;
+}
+/* This is where styling for index-02 starts */
+
+/* .map_fr {
+    max-width: 50px;
+    margin-bottom: 40px;
+} */
+
+h1{
+    margin-top: 20px;
+}
+
+/* Styling the voting section. */
+.voting-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: hsl(216, 35%, 8%);
+    border-radius: 20px;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+
+option,
+select {
+
+    font-size: 18px;
+    font-family: 'poppins';
+    word-wrap: normal;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+select{
+    margin-top: 50px;
+    border-radius: 5px;
+    width: 220px;
+    background-color: rgb(255, 255, 255);
+}
+
+option {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    background-color: gainsboro;
+}
+
+#state-btn,
+#vote {
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+#vote:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+#vote:active {
+    background-color: white;
+    border-color: black;
+    transform: scale(.9);
+}
+
+
+.contestants [type=radio] {
+    display: none;
+    width: 40px;
+}
+
+.contestants [type=radio]+img {
+    cursor: pointer;
+}
+
+/* IMAGE STYLES */
+.flex-vote-image {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#musk, #edward {
+    width: 100px;
+    height: 100px;
+}
+
+.square-images {
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+.vote-image {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* CHECKED STYLES */
+.contestants [type=radio]:checked+img {
+    outline: 1px solid #f00;
+    opacity: .5;
+}
+
+select {
+    box-sizing: border-box;
+    align-items: center;
+    margin: 0em;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+.election-counter {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 0px 0 0 300px;
+    width: 100px;
+    justify-content: space-around;
+}
+
+.left-map,
+.right-side {
+    margin-top: 120px;
+}

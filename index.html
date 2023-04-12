@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_quaries.css">
+    <link rel="icon" type="image/x-icon" href="img/icon.png">
+    <title>Get Involved</title>
+</head>
+<body>
+    <div class="sticky-navbar">
+        <div class="nav-bar">
+            <div class="page-name">Edwardspeak</div>
+    
+            <div class="election-counter">
+                <div id="p-left">
+                    <p>0</p>
+                </div>
+                <div>
+                    <p>:</p>
+                </div>
+                <div id="p-right">
+                    <p>0</p>
+                </div>
+            </div>
+    
+            <div class="nav-bar-button"><button class="get-started-button started submit"> Get Started</button></div>
+        </div>
+    
+        <div class="percent-box">
+            <div class="progress-bar">
+                <div class="percent-bar-style">
+                    <div class="lightblue" id="edward-bar"></div>
+                    <div class="lightpink" id="musk-bar"></div>
+                </div>
+                <div class="musk-img">
+                    <!-- <img src="./img/musk.jpg" alt="musk-icon" id="musk-icon"> -->
+                </div>  
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="left-side">
+            <div class="rounded-images">
+                <div class="elon-image">
+                    <img class="round-images" src="img/elon.jpg" alt="">
+                </div>
+                <div class="edward-image">
+                    <img class="round-images" src="img/tesla.jpg" alt="">
+                </div>
+                <div class="normarl-image">
+                    <img class="round-images" src="img/edward.jpeg" alt="">
+                </div>
+            </div>
+            <div class="left-side-edit">
+                <div class="left-side-text">
+                    <div class="Election-Of-The-Head-Of-Our-State">
+                        Election For Best Techie Of The year
+                    </div>
+                    <div class="participate-text">
+                        Now Everyone can Participate
+                    </div>
+                    <div class="blah-blah-blah">
+                        In protocolary terms, the head of a sovereign, independent state is usually identified as <br> the individual who, according to that state's constitution, is the reigning king, when it <br> comes to a monarchy, or the president, in the case of a republic.
+                    </div>
+                    <a href="#down"><button class="get-started-button involved submit"> Vote Now</button></a>
+                        
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="small-box reveal">
+        Now that Mortals are asleep. Techies arise
+    </div> -->
+
+    <div class="second-container reveal" id="down">
+        <div class="left-map-side reveal">
+            <div class="map_fr"> <!-- Keep map above fold -->
+                <div id="map"></div>
+            </div>
+        </div>
+
+        <div class="right-vote-side reveal">
+            <div class="voting-section">
+                <h1>Cast Your Vote</h1>
+                <div>
+                    <!-- <label for="states">Select State:</label> -->
+        
+                    <select name="states" id="select-state" onchange="selectState()" value="">
+                        <option selected disabled>Click to select State</option>
+                        <option value="28">Alabama</option>
+                        <option value="1">Alaska</option>
+                        <option value="44">Arizona</option>
+                        <option value="23">Arkansas</option>
+                        <option value="48">California</option>
+                        <option value="42">Colorado</option>
+                        <option value="17">Connecticut</option>
+                        <option value="10">Delaware</option>
+                        <option value="20">District Of Columbia</option>
+                        <option value="2">Florida</option>
+                        <option value="25">Georgia</option>
+                        <option value="0">Hawaii</option>
+                        <option value="50">Idaho</option>
+                        <option value="16">Illinois</option>
+                        <option value="15">Indiana</option>
+                        <option value="31">Iowa</option>
+                        <option value="36">Kansas</option>
+                        <option value="27">Kentucky</option>
+                        <option value="29">Louisiana</option>
+                        <option value="5">Maine</option>
+                        <option value="11">Maryland</option>
+                        <option value="21">Massachusetts</option>
+                        <option value="49">Michigan</option>
+                        <option value="32">Minnesota</option>
+                        <option value="30">Mississippi</option>
+                        <option value="24">Missouri</option>
+                        <option value="41">Montana</option>
+                        <option value="37">Nebraska</option>
+                        <option value="45">Nevada</option>
+                        <option value="3">New Hampshire</option>
+                        <option value="9">New Jersey</option>
+                        <option value="35">New Mexico</option>
+                        <option value="7">New York</option>
+                        <option value="19">North Carolina</option>
+                        <option value="39">North Dakota</option>
+                        <option value="14">Ohio</option>
+                        <option value="33">Oklahoma</option>
+                        <option value="46">Oregon</option>
+                        <option value="8">Pennsylvania</option>
+                        <option value="6">Rhode Island</option>
+                        <option value="26">South Carolina</option>
+                        <option value="38">South Dakota</option>
+                        <option value="22">Tennessee</option>
+                        <option value="34">Texas</option>
+                        <option value="43">Utah</option>
+                        <option value="4">Vermont</option>
+                        <option value="12">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="47">West Virginia</option>
+                        <option value="18">Wisconsin</option>
+                        <option value="40">Wyoming</option>
+                    </select>
+                </div>
+        
+                <form>
+                    <div class="contestants flex-vote-image" value="">
+                        <label>
+                            
+                            <div class="square-images vote-image">
+                                <input type="radio" name="person" value="edward" checked>
+                                <img id="edward" src="img/edward.jpeg" alt="">
+                                <p>VOTE <br> EDWARD</p>
+                            </div>
+                        </label>
+        
+                        <label>
+                            <div class="square-images vote-image">
+                                <input type="radio" name="person" value="musk">
+                                <img id="musk" src="img/musk.jpg" alt="">
+                                <p>VOTE <br> MUSK</p>
+                            </div>
+                        </label>
+                    </div>
+        
+                </form>
+                <div class="vote-box">
+                    <button id="vote" onclick="vote()">Vote</button>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+    <script src="map js/mapdata.js"></script>
+    <script src="map js/usmap.js"></script>
+    <script src="js/script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

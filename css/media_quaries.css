@@ -1,0 +1,60 @@
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .started {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 900px) {
+    .second-container {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+    }
+}
+
+@media (max-width: 400px) {
+    .started {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    #p-left, #p-right,.election-counter {
+        /* font-size: 25px; */
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .vote-button {
+        padding: 12px 50px;
+    }
+}
+
+@media (max-width: 900px) {
+    .voting-section {
+        margin-left: 0;
+    }
+    .left-map {
+        position: absolute;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 900px) {
+    .reveal{
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 1s all ease;
+      }
+      
+    .reveal.active{
+        transform: translateY(0);
+        opacity: 1;
+      }
+}
